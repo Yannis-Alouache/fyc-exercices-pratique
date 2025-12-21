@@ -8,7 +8,15 @@
     "build": "tsc",
     "test:ex1": "jest exercice_1",
     "test:ex2": "jest exercice_2",
-    "test:cas-pratique": "jest cas_pratique"
+    "test:cas-pratique": "jest cas_pratique",
+    "test:ex1-correction": "jest exercice_1/correction",
+    "test:ex2-correction": "jest exercice_2/correction",
+    "test:cas-pratique-correction": "jest cas_pratique/correction",
+    "test:ex1-a-faire": "jest exercice_1/a_faire",
+    "test:ex2-a-faire": "jest exercice_2/a_faire",
+    "test:cas-pratique-a-faire": "jest cas_pratique/a_faire",
+    "test:all-correction": "jest --testPathPatterns=correction",
+    "test:all-a-faire": "jest --testPathPatterns=a_faire"
   },
   "repository": {
     "type": "git",

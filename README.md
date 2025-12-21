@@ -81,15 +81,38 @@ Pour faire un exercice :
 
 ## Tests
 
-### Lancer les tests par exercice
+### Tests par type (correction ou exercice)
+
+#### Tests des corrections
 ```bash
-# Exercice 1: Exceptions hexagonales
+# Lancer les tests de correction pour chaque exercice
+npm run test:ex1-correction
+npm run test:ex2-correction
+npm run test:cas-pratique-correction
+
+# Lancer tous les tests de correction
+npm run test:all-correction
+```
+
+#### Tests des exercices à faire
+```bash
+# Lancer les tests des exercices à faire (échoueront tant que non implémentés)
+npm run test:ex1-a-faire
+npm run test:ex2-a-faire
+npm run test:cas-pratique-a-faire
+
+# Lancer tous les tests des exercices à faire
+npm run test:all-a-faire
+```
+
+### Tests combinés
+```bash
+# Lancer tous les tests (correction + a_faire)
+npm test
+
+# Lancer les tests pour un exercice spécifique (les deux dossiers)
 npm run test:ex1
-
-# Exercice 2: Repository en mémoire
 npm run test:ex2
-
-# Cas pratique: Intégration complète
 npm run test:cas-pratique
 ```
 
