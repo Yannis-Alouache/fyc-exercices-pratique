@@ -7,12 +7,23 @@ Ce projet contient les exercices pratiques pour le cours d'architecture logiciel
 ```
 fyc-exercices-pratique/
 ├── exercice_1/
+│   ├── a_faire/
+│   │   ├── domain/exceptions/
+│   │   │   ├── domain.exception.ts
+│   │   │   └── book.exception.ts
+│   │   └── tests/exceptions.spec.ts
 │   └── correction/
 │       ├── domain/exceptions/
 │       │   ├── domain.exception.ts
 │       │   └── book.exception.ts
 │       └── tests/exceptions.spec.ts
 ├── exercice_2/
+│   ├── a_faire/
+│   │   ├── domain/
+│   │   │   ├── model/book.model.ts
+│   │   │   └── repository/book.repository.ts
+│   │   ├── infrastructure/in-memory-book.repository.ts
+│   │   └── tests/book.repository.spec.ts
 │   └── correction/
 │       ├── domain/
 │       │   ├── model/book.model.ts
@@ -20,6 +31,20 @@ fyc-exercices-pratique/
 │       ├── infrastructure/in-memory-book.repository.ts
 │       └── tests/book.repository.spec.ts
 └── cas_pratique/
+    ├── a_faire/
+    │   ├── domain/
+    │   │   ├── model/book.model.ts
+    │   │   ├── repository/book.repository.ts
+    │   │   └── exceptions/
+    │   ├── infrastructure/in-memory-book.repository.ts
+    │   ├── application/
+    │   │   ├── create-book.usecase.ts
+    │   │   ├── get-book-by-id.usecase.ts
+    │   │   ├── get-all-books.usecase.ts
+    │   │   └── delete-book.usecase.ts
+    │   └── tests/
+    │       ├── create-book.usecase.spec.ts
+    │       └── get-book-by-id.usecase.spec.ts
     └── correction/
         ├── domain/
         │   ├── model/book.model.ts
@@ -41,6 +66,18 @@ fyc-exercices-pratique/
 ```bash
 npm install
 ```
+
+## Utilisation
+
+Chaque exercice contient deux dossiers :
+
+- **`a_faire/`** : Contient les fichiers vides avec des TODO pour guider l'implémentation
+- **`correction/`** : Contient la solution complète et fonctionnelle
+
+Pour faire un exercice :
+1. Travailler dans les fichiers du dossier `a_faire/`
+2. Compléter les TODO pour implémenter les fonctionnalités demandées
+3. Comparer avec la correction dans le dossier `correction/` si nécessaire
 
 ## Tests
 

@@ -1,0 +1,1 @@
+// TODO: Définir l'interface Book avec propriétés étendues

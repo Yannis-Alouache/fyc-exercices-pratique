@@ -12,8 +12,9 @@ module.exports = {
     '!**/coverage/**',
     '!**/dist/**',
     '!**/jest.config.js',
+    '!**/a_faire/**',
   ],
   moduleFileExtensions: ['ts', 'js', 'json'],
-  testPathIgnorePatterns: ['<rootDir>/dist/'],
-  modulePathIgnorePatterns: ['<rootDir>/dist/'],
+  testPathIgnorePatterns: ['<rootDir>/dist/', '.*a_faire.*'],
+  modulePathIgnorePatterns: ['<rootDir>/dist/', '.*a_faire.*'],
 };
