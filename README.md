@@ -44,11 +44,6 @@ npm install
 
 ## Tests
 
-### Lancer tous les tests
-```bash
-npm test
-```
-
 ### Lancer les tests par exercice
 ```bash
 # Exercice 1: Exceptions hexagonales
@@ -59,17 +54,6 @@ npm run test:ex2
 
 # Cas pratique: Intégration complète
 npm run test:cas-pratique
-```
-
-### Lancer les tests en mode watch
-```bash
-npm run test:watch
-```
-
-## Compilation TypeScript
-
-```bash
-npm run build
 ```
 
 ## Description des Exercices
