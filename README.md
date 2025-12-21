@@ -7,45 +7,20 @@ Ce projet contient les exercices pratiques pour le cours d'architecture logiciel
 ```
 fyc-exercices-pratique/
 ├── exercice_1/
-│   ├── a_faire/
-│   │   ├── domain/exceptions/
-│   │   │   ├── domain.exception.ts
-│   │   │   └── book.exception.ts
-│   │   └── tests/exceptions.spec.ts
-│   └── correction/
+│   └── a_faire/
 │       ├── domain/exceptions/
 │       │   ├── domain.exception.ts
 │       │   └── book.exception.ts
 │       └── tests/exceptions.spec.ts
 ├── exercice_2/
-│   ├── a_faire/
-│   │   ├── domain/
-│   │   │   ├── model/book.model.ts
-│   │   │   └── repository/book.repository.ts
-│   │   ├── infrastructure/in-memory-book.repository.ts
-│   │   └── tests/book.repository.spec.ts
-│   └── correction/
+│   └── a_faire/
 │       ├── domain/
 │       │   ├── model/book.model.ts
 │       │   └── repository/book.repository.ts
 │       ├── infrastructure/in-memory-book.repository.ts
 │       └── tests/book.repository.spec.ts
 └── cas_pratique/
-    ├── a_faire/
-    │   ├── domain/
-    │   │   ├── model/book.model.ts
-    │   │   ├── repository/book.repository.ts
-    │   │   └── exceptions/
-    │   ├── infrastructure/in-memory-book.repository.ts
-    │   ├── application/
-    │   │   ├── create-book.usecase.ts
-    │   │   ├── get-book-by-id.usecase.ts
-    │   │   ├── get-all-books.usecase.ts
-    │   │   └── delete-book.usecase.ts
-    │   └── tests/
-    │       ├── create-book.usecase.spec.ts
-    │       └── get-book-by-id.usecase.spec.ts
-    └── correction/
+    └── a_faire/
         ├── domain/
         │   ├── model/book.model.ts
         │   ├── repository/book.repository.ts
