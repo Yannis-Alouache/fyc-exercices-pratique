@@ -1,1 +1,6 @@
-// TODO: Implémenter la classe de base DomainException
+export class DomainException extends Error {
+    constructor(message: string) {
+      super(message);
+      this.name = 'DomainException';
+    }
+  }

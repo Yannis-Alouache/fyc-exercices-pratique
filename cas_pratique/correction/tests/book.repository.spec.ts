@@ -34,4 +34,24 @@ describe("InMemoryBookRepository", () => {
         expect(repository.findById("1")).toEqual(book1);
         expect(repository.findById("2")).toEqual(book2);
     });
+
+    test("should return all books", () => {
+        const book1: Book = { id: "1", title: "Clean code" };
+        const book2: Book = { id: "2", title: "The Pragmatic Programmer" };
+
+        repository.save(book1);
+        repository.save(book2);
+
+        const books = repository.findAll();
+        expect(books).toEqual([book1, book2]);
+    });
+
+    test("should delete a book", () => {
+        const book: Book = { id: "1", title: "Clean code" };
+
+        repository.save(book);
+        repository.delete("1");
+
+        expect(repository.findById("1")).toBeNull();
+    });
 })

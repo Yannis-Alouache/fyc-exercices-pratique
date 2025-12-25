@@ -1,1 +1,0 @@
-// TODO: Écrire les tests pour GetBookByIdUseCase (sans mocks)

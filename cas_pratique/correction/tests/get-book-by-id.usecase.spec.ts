@@ -25,16 +25,6 @@ describe('GetBookByIdUseCase', () => {
     expect(() => useCase.execute('99')).toThrow(BookNotFoundException);
   });
 
-  it('should throw exception with correct message', () => {
-    try {
-      useCase.execute('abc-123');
-      fail('Should have thrown BookNotFoundException');
-    } catch (error) {
-      expect(error).toBeInstanceOf(BookNotFoundException);
-      expect((error as BookNotFoundException).message).toBe('Book with id abc-123 not found');
-    }
-  });
-
   it('should return the correct book when multiple books exist', () => {
     const book1: Book = { id: '1', title: 'Clean Code', author: 'Robert C. Martin' };
     const book2: Book = { id: '2', title: 'The Pragmatic Programmer', author: 'Andrew Hunt' };

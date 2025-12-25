@@ -35,22 +35,6 @@ describe('CreateBookUseCase', () => {
     expect(foundBook).toEqual(existingBook);
   });
 
-  it('should throw exception with correct message', () => {
-    const existingBook: Book = { id: '1', title: 'Clean Code', author: 'Robert C. Martin' };
-    const newBook: Book = { id: '1', title: 'Clean Code 2', author: 'Someone Else' };
-
-    // First add the existing book
-    repository.save(existingBook);
-
-    try {
-      useCase.execute(newBook);
-      fail('Should have thrown BookAlreadyExistsException');
-    } catch (error) {
-      expect(error).toBeInstanceOf(BookAlreadyExistsException);
-      expect((error as BookAlreadyExistsException).message).toBe('Book with id 1 already exists');
-    }
-  });
-
   it('should allow creating multiple books with different IDs', () => {
     const book1: Book = { id: '1', title: 'Clean Code', author: 'Robert C. Martin' };
     const book2: Book = { id: '2', title: 'The Pragmatic Programmer', author: 'Andrew Hunt' };

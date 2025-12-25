@@ -1,1 +1,4 @@
-// TODO: Définir l'interface Book
+export interface Book {
+    id: string;
+    title: string;
+}
